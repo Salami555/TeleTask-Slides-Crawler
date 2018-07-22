@@ -27,7 +27,7 @@ module.exports = (videoId, prefixNr) => {
             if (!FS.existsSync(path)) mkdirs(path);
 			console.log(`Fetching "${vUrl}" -> "${path}"`);
 
-            const htmlMatch = /<video-player configuration='(.*?)'><\/video-player>/.exec(res.text);
+            const htmlMatch = /<video-player.*?configuration='(.*?)'.*?><\/video-player>/.exec(res.text);
             if (!htmlMatch) throw new Error('video config not found', res.text);
             const data = JSON.parse(unescapeHtml(htmlMatch[1], 'all'));
 

@@ -1,5 +1,5 @@
 {
-  "name": "TeleTask-Slides-Crawler",
+  "name": "teletask-slides-crawler",
   "version": "0.1.0",
   "description": "Crawler for extracting the slides of a TeleTask presentation",
   "main": "index.js",
