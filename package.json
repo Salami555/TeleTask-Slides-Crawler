@@ -14,7 +14,7 @@
     "sanitize-filename": "^1.6.1",
     "stackjs": "^0.1.0",
     "superagent": "^3.8.3",
-    "superagent-throttle": "^0.2.5",
+    "superagent-throttle": "^1.0.1",
     "unescape": "^1.0.1"
   }
 }
